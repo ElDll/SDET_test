@@ -1,9 +1,7 @@
 
-import pytest
 from .pages.calculator_page import CalculatorPage
 from .pages.home_page import HomePage
 
-@pytest.mark.skip
 def test_calculator_with_integers(browser):
     link = f"http://google.com/"
     page = HomePage(browser, link)
@@ -12,7 +10,6 @@ def test_calculator_with_integers(browser):
     calculator_page = CalculatorPage(browser, browser.current_url)
     calculator_page.checking_operations_with_integers()
 
-@pytest.mark.skip
 def test_calculator_with_zero(browser):
     link = f"http://google.com/"
     page = HomePage(browser, link)
