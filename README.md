@@ -1,2 +1,1 @@
-# Stepik_final_project
-it's my final project on Automatisation course
+Тестовое задание для SDET отдела
